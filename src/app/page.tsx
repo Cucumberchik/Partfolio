@@ -1,7 +1,7 @@
+'use server'
 import { NextPage } from 'next';
 import { ReactNode } from 'react'
 import style from "./app.module.scss"
-import SwitchButtons from '@/components/switch';
 import IsOpenWindow from '@/components/isOpenWindow';
 
 
@@ -43,8 +43,12 @@ const Home:NextPage = ():ReactNode => {
             <div className={style.liner_light_right_1}></div>
             <div className={style.liner_light_right_2}></div>
           </div>
-          <div className="switch_elem">
-            <SwitchButtons />
+          <div className='app_dev_skils'>
+            <div className="app_contant_title">
+              <p>
+                Технологий разработки
+              </p>
+            </div>
           </div>
         </div>
       </main>
