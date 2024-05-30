@@ -121,3 +121,12 @@
         }
     }
 }
+
+@media (max-width: 500px) {
+    .card_skils {
+        width: 85%;
+        svg, img {
+            width: 50px;
+        }
+    }
+}
