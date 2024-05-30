@@ -51,3 +51,22 @@ body {
         overflow: auto;
     }
 }
+
+
+.layout_order_button {
+    width: 100%;
+    display: flex;
+    padding: 30px 0;
+    justify-content: center;
+
+    a {
+        padding: 10px 40px;
+        border: none;
+        color: black;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: var(--font-family);
+        background: var(--green-200);
+    }
+}
