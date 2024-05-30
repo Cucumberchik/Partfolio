@@ -1,11 +1,15 @@
 import { NextPage } from 'next';
-import { ReactNode } from 'react'
+import { ReactElement, ReactNode } from 'react'
 
-const CardSkilss:NextPage<{img: string, title: string, description: string}> = 
+const CardSkilss:NextPage<{img: ReactElement, title: string, description: string}> = 
 ({img, title, description}):ReactNode => {
   return (
     <div className='card_skils'>
-        
+        {img}
+        <div className="contant">
+            <h3>{title}</h3>
+            <p>{description}</p>
+        </div>
     </div>
   );
 };
