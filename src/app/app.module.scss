@@ -2,13 +2,27 @@
     position: relative;
     width: 100%;
     min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
     
+    .container {
+        min-width: var(--container-min-width);
+        max-width: var(--container-max-width);
+        margin: var(--container-margin);
+        height: 90%;
 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
     .frame_title {
         width: 100%;
-        padding: 120px 0;
         display: flex;
         align-items: center;
+        animation: slideDown 2s ease-out;
         
 
         .fram_title_item {
@@ -55,7 +69,6 @@
     }
 
     .wellcome_title {
-        padding: 40px 0;
         width: 100%;
         margin: 0 auto;
         display: flex;
@@ -70,6 +83,7 @@
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            text-shadow: 2px 1px 5px rgba(0, 0, 0, 0.192);
         }
 
         p {
@@ -83,14 +97,11 @@
         }
     }
 
-    .switch {
-        width: 100%;
-        padding: 40px 0;
-        margin: 0 auto;
-    }
+
 
     .bacdrop {
         position: absolute;
+        overflow: hidden;
         top: 0;
         margin: 0 auto;
         width: 100%;
@@ -141,3 +152,19 @@
         }
     }
 }
+
+
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-250%);
+    }
+    20%, 60% {
+        transform: translateY(-250%);
+
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
