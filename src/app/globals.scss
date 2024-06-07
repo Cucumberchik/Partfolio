@@ -7,6 +7,10 @@
   --green-300: #2bffe3;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --font-family: "Space Grotesk", sans-serif;
   --accent-color-dark: #07d7a7;
@@ -43,7 +47,29 @@ body {
   max-width: var(--container-max-width);
   margin: var(--container-margin);
 }
-
+.viedo_contant {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      circle,
+      rgba(0, 1, 1, 0.676) 0%,
+      rgba(0, 0, 0, 1) 93%
+    );
+  }
+  video {
+    width: 100%;
+  }
+}
 @keyframes blockScroll {
   20%,
   60%,
