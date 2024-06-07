@@ -1,11 +1,10 @@
-import { NextPage } from 'next';
-import { ReactNode } from 'react'
-import "./components.scss"
+"use client";
+import { NextPage } from "next";
+import { ReactNode } from "react";
+import "./components.scss";
 
-const IsOpenWindow:NextPage = ():ReactNode => {
-  return (
-    <div className="is_open_div"></div>
-  );
+const IsOpenWindow: NextPage = (): ReactNode => {
+  return <div className="is_open_div"></div>;
 };
 
 export default IsOpenWindow;
