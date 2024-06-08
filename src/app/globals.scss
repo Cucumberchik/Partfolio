@@ -48,6 +48,10 @@ body {
   margin: var(--container-margin);
 }
 .viedo_contant {
+  @media (max-width: 500px) {
+    display: none;
+  }
+
   width: 100%;
   position: fixed;
   top: 0;
